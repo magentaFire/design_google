@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;   
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -10,7 +11,7 @@
     margin: 0 auto;
 }
 
-.templateRow{
+.templateRow {
     content: " ";
     display: table;
 }
@@ -31,13 +32,37 @@
     background-color: $azul;
 }
 
+.izquierda {
+    float: left;
+}
+
+.derecha {
+    float: right;
+}
+
 [class*='col-'] {
     min-height: 10px;
     padding: 50px 0;
+    float: left;
 }
 
 img {
     width: 100%;
+}
+
+.header-title {
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    list-style: none;
+    color: $gris-claro;
+    padding: 0 30%;
+    margin: 40px 0 100px 0;
 }
 
 @function columnas($i){
